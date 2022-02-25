@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;   
+    
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --font-primary: "Ubuntu", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.active {
+    color: rgb(17, 4, 92);
+    /*text-decoration: underline;*/
+    font-weight: bold;
+} 
+
+.navbar h1{
+    color: whitesmoke;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li{
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/bc2.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;    
+}
+
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+    font-family: var(--font-primary);
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;   
+}
+
+.line {
+    width: 160px;
+    height: 4px;
+    background: #2c6d13;
+    margin: 15px auto;
+    border-radius: 5px;    
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: rgb(17, 4, 92);
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    width: 80%;
+    margin: 60px auto;
+    margin-top: 50px;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: #a08e28;
+}
+
+            /* Moblie Device */
+
+@media only screen and (max-width:850px){
+    
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .nav-links {
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            background: rgba(49, 48, 48 );
+            margin-top: -900px;
+            transition: all 0.5s ease; 
+        }
+
+        .mobile-menu {
+            margin-top: 0px;
+        }
+
+        .nav-links li {
+            margin: 30px auto;
+    }    
+}
+
+.projetos {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px; 
+}
+
+.card {
+    width: 18rem;
+    height: 30rem;
+    position: relative;
+    display: flex;
+}
+
+.card-img-wrapper {
+    width: 140%;
+    height: 100%;
+    background-color: #262626;
+    border-radius: .5rem;    
+}
+
+.card-img-wrapper img {
+    object-fit: cover;
+    width: 110%;
+    height: 100%;
+    border-radius: .5rem;
+}
+
+.card-info {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+}
+
+.card-info h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+}
+
+.card-info p {
+    font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite;
+}
+
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/bc3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+    display: flex;
+    align-items: center;
+}
+
+.explore-content {
+    width: 60%;
+    padding: 50px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-content h1 {
+    font-size: 7vmin;
+    margin: 50px;
+}
+
+.explore-content .line{
+    margin-bottom: auto;
+}
+
+
+.explore-content p{
+    color: aliceblue;
+}
+
+.explore-content .ctn {
+    margin-top: 40px;
+
+}
